@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react'
 import {Collapse} from 'react-collapse';
 import { useWindowWidth } from '@react-hook/window-size'
@@ -22,7 +21,7 @@ export default function Menu({ title, items }) {
         if (!isOpen && windowWidth > 768) {
             setIsOpen(true)
         }
-    }, [windowWidth])
+    }, [isOpen, windowWidth])
 
     return (
         <section>
@@ -40,7 +39,7 @@ export default function Menu({ title, items }) {
                         <ul className="grid gap-y-1 md:gap-y-2">
                             {items.map((item, key) => (
                                 <li key={key}>
-                                    <a href="#" className="text-sm hover:text-brand-color">
+                                    <a href="href" className="text-sm hover:text-brand-color">
                                         {item.title}
                                     </a>
                                 </li>

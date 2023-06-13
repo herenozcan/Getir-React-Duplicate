@@ -69,7 +69,7 @@ function Campaigns() {
           <Slider className="-mx-2 relative" {...settings}>
             {banners && banners.map(banner => (
               <div key={banner.id} className="px-2">
-                <img src={banner.image} className="w-full sm:rounded-lg" />
+                <img src={banner.image} className="w-full sm:rounded-lg" alt="" />
               </div>
             ))}
           </Slider>
